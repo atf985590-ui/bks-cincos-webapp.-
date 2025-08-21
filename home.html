@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الرئيسية - BKS Cincos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- الرسالة الترحيبية المنبثقة -->
+    <div id="welcome-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>مرحبًا بك في BKS Cincos التسوق والتمويل مول!</h2>
+            <p>خدمة العملاء Telegram: <a href="https://t.me/ta_ta_ta_123" target="_blank">https://t.me/ta_ta_ta_123</a></p>
+            <ul>
+                <li>أسرع طريقة لكسب المال هي تكوين فريق قوي.</li>
+                <li>إذا تجاوز إيداع واحد USDT أو أكثر، يتم إعطاء 15% من مبلغ الإيداع.</li>
+                <li>تسجيل وإعطاء اليانصيب، مع أقصى مكافأة USDT.</li>
+                <li>إيداع أعضاء الفريق لأكثر من USDT يمنحك يانصيب (مكافأة 5-300 USDT).</li>
+                <li>نشر الإعلانات وملابس المنصات، ومكافأة 16-556 USDT.</li>
+                <li>والمزيد من المزايا عند تكوين فريق قوي!</li>
+            </ul>
+            <button id="accept-welcome" class="btn">موافق</button>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <!-- الشريط العلوي -->
+        <header>
+            <div class="logo-animation">BKS Cincos</div>
+            <div class="header-buttons">
+                <button class="btn-header" onclick="showPage('deposit')"><i class="fas fa-wallet"></i> إيداع</button>
+                <button class="btn-header" onclick="showPage('withdraw')"><i class="fas fa-money-bill-wave"></i> سحب</button>
+            </div>
+        </header>
+
+        <!-- بانر السحب المتحرك -->
+        <div class="withdrawal-banner">
+            <p id="withdrawal-text">تم سحب 12$ بنجاح</p>
+        </div>
+        
+        <!-- بانر الخطط المتحرك -->
+        <div class="vip-slider">
+            <!-- سيتم إضافة الخطط هنا عبر JavaScript -->
+        </div>
+
+        <!-- المحتوى الرئيسي للصفحات -->
+        <main id="main-content">
+            <!-- سيتم تحميل محتوى الأقسام هنا -->
+        </main>
+
+        <!-- شريط التنقل السفلي -->
+        <nav class="bottom-nav">
+            <a href="#" class="nav-item active" onclick="showPage('home')"><i class="fas fa-home"></i><p>الرئيسية</p></a>
+            <a href="#" class="nav-item" onclick="showPage('vip')"><i class="fas fa-star"></i><p>كبار الشخصيات</p></a>
+            <a href="#" class="nav-item" onclick="showPage('tasks')"><i class="fas fa-tasks"></i><p>المهام</p></a>
+            <a href="#" class="nav-item" onclick="showPage('invite')"><i class="fas fa-user-plus"></i><p>دعوة</p></a>
+            <a href="#" class="nav-item" onclick="showPage('me')"><i class="fas fa-user"></i><p>أنا</p></a>
+        </nav>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
